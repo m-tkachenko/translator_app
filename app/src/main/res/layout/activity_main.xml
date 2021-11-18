@@ -8,14 +8,15 @@
     tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_for_upper_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
-        app:cardCornerRadius="20dp"
         android:elevation="10dp"
-        app:contentPadding="20dp"
         app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -26,22 +27,69 @@
             android:background="?attr/colorPrimary">
 
             <EditText
+                android:id="@+id/edittext_upper"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:autofillHints="English here"
+                tools:text="myGodislove"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button_for_translation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="?attr/colorSecondary"
+        android:text="Translate"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardview_for_lower_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview_for_upper_text" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_for_lower_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="50dp"
+        android:elevation="10dp"
+        app:cardBackgroundColor="?attr/colorPrimary"
+        app:cardCornerRadius="20dp"
+        app:contentPadding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/colorPrimary">
+
+            <EditText
+                android:id="@+id/edittext_lower"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:autofillHints="English here"
+                android:textColor="@color/black"
+                android:textSize="32sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:autofillHints="English here"
-                android:textColor="@color/black"
-                android:text="myGodislove"
-                android:textSize="32sp"/>
+                tools:text="myGodislove" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-    
-    <Button
-        android:layout_width=""
-        android:layout_height=""
 
 </androidx.constraintlayout.widget.ConstraintLayout>
