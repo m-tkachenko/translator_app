@@ -5,6 +5,20 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
+
+
+    <!-- GREEN -->
+    <color name="green_tea_light">#CCFCCB</color>
+    <color name="green_tea_little_bit_darker">#96E6B3</color>
+    <color name="green_emerald">#2FC666</color>
+
+    <!-- RED -->
+    <color name="red_flame">#E4572E</color>
+    <color name="red_dark">#C7421A</color>
+
+    <!-- OTHER -->
+    <color name="white_mint">#F1FFFA</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
 </resources>
