@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Translator_app">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.TranslateActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

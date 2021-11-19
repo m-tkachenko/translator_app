@@ -5,18 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.TranslateActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview_for_upper_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:elevation="10dp"
         app:cardBackgroundColor="?attr/colorPrimary"
         app:cardCornerRadius="20dp"
-        app:contentPadding="20dp"
+        app:contentPadding="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -31,9 +31,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:autofillHints="English here"
-                tools:text="myGodislove"
-                android:textColor="@color/black"
+                android:hint="English here"
+                android:textCursorDrawable="@null"
+                tools:ignore="TextContrastCheck"
+                android:textColor="?attr/colorOnPrimary"
                 android:textSize="32sp"
+                android:background="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -42,31 +45,32 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/button_for_translation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="10dp"
+        android:text="@string/string_translate_button"
+        android:textColor="?attr/colorOnPrimary"
+        app:cornerRadius="20dp"
         android:backgroundTint="?attr/colorSecondary"
-        android:text="Translate"
         android:textAllCaps="false"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/cardview_for_lower_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardview_for_upper_text" />
+        app:layout_constraintTop_toBottomOf="@+id/cardview_for_upper_text"/>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview_for_lower_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:elevation="10dp"
         app:cardBackgroundColor="?attr/colorPrimary"
         app:cardCornerRadius="20dp"
-        app:contentPadding="20dp"
+        app:contentPadding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -81,13 +85,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:autofillHints="English here"
-                android:textColor="@color/black"
                 android:textSize="32sp"
+                android:hint="Ukrainian here"
+                android:textCursorDrawable="@null"
+                tools:ignore="TextContrastCheck"
+                android:textColor="?attr/colorOnPrimary"
+                android:background="?attr/colorPrimary"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="myGodislove" />
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

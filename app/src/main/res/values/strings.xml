@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">translator_app</string>
+    <string name="app_name">jusTranslate</string>
+    <string name="string_translate_button">Translate</string>
 </resources>
