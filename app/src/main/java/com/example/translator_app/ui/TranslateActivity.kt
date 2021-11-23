@@ -14,8 +14,6 @@ class TranslateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_translate)
 
-        Log.e("LOG", "Activity created")
-
         viewModel = ViewModelProvider(this).get(TranslateViewModel::class.java)
     }
 }
